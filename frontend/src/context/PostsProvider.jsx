@@ -72,7 +72,6 @@ const PostsProvider = ({ children }) => {
     const config = {
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YmZiYmJiOWNiMjM1ZjNiYTBjZTBhNCIsImlhdCI6MTcwNzA2NDUzMCwiZXhwIjoxNzA5NjU2NTMwfQ.2cuj5-iRXJmr8QSVCqNgh19bMoB0g85DDc_y1djAVWA`,
       },
     };
     try {
