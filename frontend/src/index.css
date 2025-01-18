@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilo inicial del div con gradiente */
+.gradient-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  transition: background 3s ease; /* Transición suave del color de fondo */
+}
+
+.gradient-overlay--bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse closest-side,
+    rgba(0, 0, 0, 0.3),
+    #0b0719 /* Cambiar a blanco con opacidad completa */
+  );
+  /* transition: background 3s ease;  */
+  /* Transición suave del color de fondo */
+}
+
+/* Cambia la opacidad del gradiente al hacer hover */
+.contenedor:hover .gradient-overlay {
+  background: linear-gradient(to top, rgb(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+/*  */
+
+.editorContainer .quill {
+  border: none;
+  border: 1px solid #aa9add;
+}
+
+.editorContainer .ql-editor {
+  height: 400px;
+  max-height: 400px;
+  overflow: auto;
+}
+
+.editorContainer .ql-toolbar.ql-snow {
+  border: none;
+  border-bottom: 1px solid #aa9add;
+}
+
+.editorContainer .ql-container.ql-snow {
+  border: none;
+}
+
+/* CUERPO DE NOTICIA */
+
+.notica__cuerpo a,
+.notica__cuerpo strong {
+  color: white;
+}
+
+.notica__cuerpo blockquote {
+  border-left: 2px solid #ea429a;
+  padding: 6px;
+  padding-left: 20px;
+}
+
+.notica__cuerpo img {
+  width: 100%;
+  object-fit: cover;
+}
